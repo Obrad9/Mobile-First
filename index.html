@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>Mobile First</title>
+</head>
+<body>
+    
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav__list">
+            <div class="nav__item">
+                <a class="nav__link" href="#!">Home</a>
+            </div>
+            <div class="nav__item">
+                <a class="nav__link" href="#!">About</a>
+            </div>
+            <div class="nav__item">
+                <a class="nav__link" href="#!">Info</a>
+            </div>
+            <div class="nav__item">
+                <a class="nav__link" href="#!">FAQ</a>
+            </div>
+            <div class="nav__item">
+                <a class="nav__link" href="#!">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carousel -->
+    <div class="carousel">
+        <div class="carousel__slider">
+            <img class="carousel__image" src="https://source.unsplash.com/900x500/">
+            <div class="carousel__text">Image 1</div>
+        </div>
+        <div class="carousel__slider">
+            <img class="carousel__image" src="https://source.unsplash.com/900x501/">
+            <div class="carousel__text">Image 2</div>
+        </div>
+        <div class="carousel__slider">
+            <img class="carousel__image" src="https://source.unsplash.com/900x502/">
+            <div class="carousel__text">Image 3</div>
+        </div>
+        <div class="carousel__slider">
+            <img class="carousel__image" src="https://source.unsplash.com/900x503/">
+            <div class="carousel__text">Image 4</div>
+        </div>
+
+        <a class="carousel__prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="carousel__next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <!-- Section -->
+    <section class="section">
+        <div class="section-one">
+            <h1 class="section-one__header">Lorem, ipsum dolor.</h1>
+            <p class="section-one__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi culpa eius ipsa ut facilis dolore excepturi hic velit veniam expedita enim porro doloribus, ipsum aliquid beatae cupiditate molestiae delectus ex. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed facere, optio dolorum, sapiente eos fuga explicabo libero quaerat, magni dolorem ipsa ea natus vitae sit velit mollitia odit corporis. Quibusdam.</p>
+        </div>
+        
+        <div class="section-two">
+            <h1 class="section-two__header">Lorem, ipsum dolor.</h1>
+            <p class="section-two__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi culpa eius ipsa ut facilis dolore excepturi hic velit veniam expedita enim porro doloribus, ipsum aliquid beatae cupiditate molestiae delectus ex. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed facere, optio dolorum, sapiente eos fuga explicabo libero quaerat, magni dolorem ipsa ea natus vitae sit velit mollitia odit corporis. Quibusdam.</p>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Carousel Script -->
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+    showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+    showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("carousel__slider");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slides[slideIndex-1].style.display = "block";
+}
+</script>
+</body>
+</html>

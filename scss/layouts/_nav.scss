@@ -1,0 +1,28 @@
+.nav {
+    
+
+    &__list {
+        display: flex;
+    }
+
+    &__item {
+        flex: 1;
+    }
+
+    &__link {
+        display: block;
+        text-decoration: none;
+        width: 100%;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: Tahoma;
+        background-color: rgb(112, 21, 21);
+        color: white;
+        padding: 1.1rem 0rem;
+        letter-spacing: 2px;
+
+        &:hover {
+            background-color: rgb(150, 35, 35);    
+        }
+    }
+}
