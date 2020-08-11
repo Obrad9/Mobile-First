@@ -1,28 +1,47 @@
 .nav {
     
+    .horizontal-line {
+        margin: 0;
+        height: 0.3rem;
+        @include hr;
+    }
+       
+    &__image {
+        position: absolute;
+        width: 100%;
+        height: 70vh;
+
+        @media screen and (min-width: 600px){
+            height: 90vh;
+        }
+    }
 
     &__list {
+        position: relative;
+        top: 20px;
         display: flex;
+        justify-content: space-between;
     }
 
     &__item {
-        flex: 1;
+        padding: 0 1rem;
     }
 
     &__link {
-        display: block;
-        text-decoration: none;
-        width: 100%;
-        text-align: center;
-        text-transform: uppercase;
-        font-family: Tahoma;
-        background-color: rgb(112, 21, 21);
-        color: white;
+        text-decoration: none;      
         padding: 1.1rem 0rem;
-        letter-spacing: 2px;
+        @include text;
+    }
 
-        &:hover {
-            background-color: rgb(150, 35, 35);    
+    &__header {
+        position: relative;
+        margin-top: 10rem;
+        font-weight: normal;        
+        font-size: 2.3rem;
+        @include text;
+
+        &::selection {
+            background-color: rgb(6, 175, 152);
         }
     }
 }

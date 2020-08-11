@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <title>Mobile First</title>
 </head>
@@ -11,98 +12,175 @@
     
     <!-- Navigation -->
     <nav class="nav">
+        <hr class="horizontal-line">
+        <img class="nav__image" src="https://thewaltdisneycompany.com/app/uploads/2020/01/StudioLot_TeamDisney_7-web-1440x959.jpg">
         <div class="nav__list">
             <div class="nav__item">
-                <a class="nav__link" href="#!">Home</a>
+                <a class="nav__link" href="#!">Menu</a>
             </div>
             <div class="nav__item">
-                <a class="nav__link" href="#!">About</a>
+                <a class="nav__link" href="#!">The Walt Disney Company</a>
             </div>
             <div class="nav__item">
-                <a class="nav__link" href="#!">Info</a>
-            </div>
-            <div class="nav__item">
-                <a class="nav__link" href="#!">FAQ</a>
-            </div>
-            <div class="nav__item">
-                <a class="nav__link" href="#!">Contact</a>
+                <a class="nav__link" href="#!">Lupa</a>
             </div>
         </div>
+        <h1 class="nav__header">The walt disney company</h1>
     </nav>
+    
 
-    <!-- Carousel -->
-    <div class="carousel">
-        <div class="carousel__slider">
-            <img class="carousel__image" src="https://source.unsplash.com/900x500/">
-            <div class="carousel__text">Image 1</div>
+    <!-- Section Stock -->
+    <section class="section-stock">
+        <div class="stock">
+            <div class="stock__text">
+                <p class="stock__text-time">DIS as if 04:02 PM EDT</p>
+                <p class="stock__text-delay">pricing delayed by 15min</p>
+            </div>
+            <p class="stock__text-price">$129.93</p>
+            <p class="stock__text-difference">&#8595;-0.89(-0.68%)</p>
+            <a class="stock__text-link" href="#!">view stock details</a>
         </div>
-        <div class="carousel__slider">
-            <img class="carousel__image" src="https://source.unsplash.com/900x501/">
-            <div class="carousel__text">Image 2</div>
-        </div>
-        <div class="carousel__slider">
-            <img class="carousel__image" src="https://source.unsplash.com/900x502/">
-            <div class="carousel__text">Image 3</div>
-        </div>
-        <div class="carousel__slider">
-            <img class="carousel__image" src="https://source.unsplash.com/900x503/">
-            <div class="carousel__text">Image 4</div>
+    </section>
+
+    <!-- Section News -->
+    <section class="news">
+        <div class="news__header">
+            <h1 class="news__title">recent news</h1>
+            <hr class="horizontal-line">
         </div>
 
-        <a class="carousel__prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="carousel__next" onclick="plusSlides(1)">&#10095;</a>
-    </div>
-
-    <!-- Section -->
-    <section class="section">
-        <div class="section-one">
-            <h1 class="section-one__header">Lorem, ipsum dolor.</h1>
-            <p class="section-one__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi culpa eius ipsa ut facilis dolore excepturi hic velit veniam expedita enim porro doloribus, ipsum aliquid beatae cupiditate molestiae delectus ex. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed facere, optio dolorum, sapiente eos fuga explicabo libero quaerat, magni dolorem ipsa ea natus vitae sit velit mollitia odit corporis. Quibusdam.</p>
-        </div>
+        <div class="news__deck">
+            <div class="news__section-mid">
+                <div class="news__card">
+                    <a class="news__link" href="#!">
+                        <img class="news__image" src="https://thewaltdisneycompany.com/app/uploads/2020/07/073020_Disney-Launchpad-00-700x464.jpg">
+                    </a>
+                    <div class="news__footer">
+                        <p class="news__date">july 30, 2020</p>
+                        <p class="news__description">Disney Launchpad: Shorts Incubator Unveils 2020 Directors</p>
+                    </div>
+                </div>           
+            </div>
+            
+            
+            <div class="news__section-left">
+                <div class="news__card">
+                    <a class="news__link" href="#!">
+                        <img class="news__image" src="https://thewaltdisneycompany.com/app/uploads/2020/07/6_huc-ff-000185_d042eb87_0498a65f-1-350x232.jpg">
+                    </a>
+                    <div class="news__footer">
+                        <p class="news__date">july 28, 2020</p>
+                        <p class="news__description">The Walt Disney Company Earn 145 2020 Primetime Emmy&reg; Award Nominations</p>
+                    </div>
+                </div>
         
-        <div class="section-two">
-            <h1 class="section-two__header">Lorem, ipsum dolor.</h1>
-            <p class="section-two__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi culpa eius ipsa ut facilis dolore excepturi hic velit veniam expedita enim porro doloribus, ipsum aliquid beatae cupiditate molestiae delectus ex. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed facere, optio dolorum, sapiente eos fuga explicabo libero quaerat, magni dolorem ipsa ea natus vitae sit velit mollitia odit corporis. Quibusdam.</p>
+                <div class="news__card">
+                    <a class="news__link" href="#!">
+                        <img class="news__image" src="https://thewaltdisneycompany.com/app/uploads/2020/07/RegisDisneyLegend-350x232.jpg">
+                    </a>
+                    <div class="news__footer">
+                        <p class="news__date">july 25, 2020</p>
+                        <p class="news__description">Disney legend Regis Philbin Passes Away at 88</p>
+                    </div>
+                </div>
+            </div>
+            
+    
+            <div class="news__section-right">
+                <div class="news__card">
+                    <a class="news__link" href="#!">
+                        <img class="news__image" src="https://thewaltdisneycompany.com/app/uploads/2020/07/072020_black-is-king-new-trailer_1-350x232.jpg">
+                    </a>
+                    <div class="news__footer">
+                        <p class="news__date">july 20, 2020</p>
+                        <p class="news__description">New Trailer and Poster Debut for 'Black is King'</p>
+                    </div>
+                </div>
+        
+                <div class="news__card">
+                    <a class="news__link" href="#!">
+                        <img class="news__image" src="https://thewaltdisneycompany.com/app/uploads/2020/07/071320_disney-plus-audio-description-350x232.jpg">
+                    </a>
+                    <div class="news__footer">
+                        <p class="news__date">july 13, 2020</p>
+                        <p class="news__description">Disney+ Honored by American Council of the Blind for Achievement in Audio Description</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section About -->
+    <section class="section-about">
+        <div class="about about-first">
+            <img class="about__image" src="https://thewaltdisneycompany.com/app/uploads/About-Featured-960x540.jpg">
+            <div class="about__description">
+                <h1 class="about__header">About</h1>
+                <p class="about__text">The mission of The Walt Disney Company is to entertain, inform and inspire people around the globe through the power of unparalleled storytelling, reflecting the iconic brands, creative minds and innovative technologies that make ours the world’s premier entertainment company.</p>
+                <a class="about__link" href="#!">View more</a>
+            </div>
+        </div>
+
+        <div class="about about-second">
+            <img class="about__image" src="https://thewaltdisneycompany.com/app/uploads/2020/06/hamilton_034_1d8d4780-960x540.jpg">
+            <div class="about__description">
+                <h1 class="about__header">Investor relations</h1>
+                <p class="about__text">Our commitment to creativity, technology and innovation generates unparalleled experiences that drive long-term value for our shareholders.</p>
+                <a class="about__link" href="#!">View more</a>
+            </div>
+        </div>
+
+        <div class="about about-third">
+            <img class="about__image" src="https://thewaltdisneycompany.com/app/uploads/Careers-Featured.jpg">
+            <div class="about__description">
+                <h1 class="about__header">CAREERS</h1>
+                <p class="about__text">Explore a variety of opportunities to start a new chapter in your career at Disney.</p>
+                <a class="about__link" href="#!">View more</a>
+            </div>
+        </div>
+
+        <div class="about about-fourth">
+            <img class="about__image" src="https://thewaltdisneycompany.com/app/uploads/2020/02/V_HeroBannerImage-960x540.jpg">
+            <div class="about__description">
+                <h1 class="about__header">SOCIAL RESPONSIBILITY
+                </h1>
+                <p class="about__text">Our approach to corporate social responsibility is built upon the Company’s long and enduring legacy of engagement in our workplaces and communities and our actions to protect the environment.</p>
+                <a class="about__link" href="#!">View more</a>
+            </div>
         </div>
     </section>
 
 
+    <footer class="footer">
+        <div class="footer-header">
+            <h5 class="footer-header__title">Follow us on</h5>
+            <a class="footer-header__link" href="#!">
+                <span class="fa fa-twitter" aria-hidden="true"></span>
+            </a>
+        </div>
+        
+        <nav class="footer-nav">
+            <a class="footer-nav__link" href="#!">Terms of Use</a>
+            <a class="footer-nav__link" href="#!">Privacy Policy</a>
+            <a class="footer-nav__link" href="#!">Your California Privacy Rights</a>
+            <a class="footer-nav__link" href="#!">Children's Online Privacy Policy</a>
+            <a class="footer-nav__link" href="#!">Disney.com Guest Services</a>
+            <a class="footer-nav__link" href="#!">Advertise With Us</a>
+            <a class="footer-nav__link" href="#!">Interest-Based Ads</a>
+            <a class="footer-nav__link" href="#!">Do Not Sell My Info</a>
+            <a class="footer-nav__link" href="#!">Contact Us</a>
+        </nav>
+
+        <div class="footer-copyright">
+            <p class="footer-copyright__text">&copy;Disney 2020 All Rights Reserved.</p>
+        </div>
+
+        <hr class="horizontal-line">
+
+    </footer>
 
 
 
 
-
-
-
-
-
-
-
-<!-- Carousel Script -->
-<script>
-    var slideIndex = 1;
-    showSlides(slideIndex);
-
-    // Next/previous controls
-    function plusSlides(n) {
-    showSlides(slideIndex += n);
-    }
-
-    // Thumbnail image controls
-    function currentSlide(n) {
-    showSlides(slideIndex = n);
-    }
-
-    function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("carousel__slider");
-    if (n > slides.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = slides.length}
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    slides[slideIndex-1].style.display = "block";
-}
-</script>
 </body>
 </html>

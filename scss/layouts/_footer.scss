@@ -1,0 +1,77 @@
+.footer {
+    background-color: rgb(248, 248, 242);
+
+    &-header {
+        text-align: center;
+        padding: 4rem 0 2rem 0;
+
+        &__title {
+            color: rgb(190, 190, 190);
+            margin: 0.4rem;
+            text-transform: uppercase;
+
+            &::selection {
+                @include hover;
+            }
+        }
+    }
+
+    .fa {
+        padding: 0.5rem;
+        background-color: rgb(0, 204, 255);
+        color: white;
+        border-radius: 10px;
+        font-size: 1.5rem;
+
+        &:hover {
+            @include hover;
+            transition-duration: 0.5s;
+        }
+    }
+
+    &-nav {
+        padding: 0 3rem;
+        text-align: center;
+
+        &__link {
+            padding: 0 0.5rem;
+            text-decoration: none;
+            font-size: 0.8rem;
+            color: $hover-color;
+            font-family: Arial, Helvetica, sans-serif;
+            border-right: 1px solid rgb(218, 218, 218);
+
+            &::selection {
+                @include hover;
+            }
+            
+            &:last-child {
+                border: 0;
+            }
+
+            &:hover {
+                color: black;
+                transition: 0.5s;
+            }
+        }
+    }
+
+    &-copyright {
+        text-align: center;
+        font-size: 0.9rem;
+        color: rgb(221, 221, 221);
+        margin-bottom: 3rem;
+
+        &__text {
+            &::selection {
+                @include hover;
+            }
+        }
+    }
+
+    .horizontal-line {
+        margin: 0;
+        height: 0.3rem;
+        @include hr;
+    }
+}

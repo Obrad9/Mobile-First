@@ -1,0 +1,19 @@
+@mixin hr {
+    background-image: linear-gradient(to right, rgb(240, 141, 11), rgba(12, 197, 188, 0.986));
+    border: none;
+}
+
+// selection color and section-second link hover
+@mixin hover {
+    background-color: $hover-color;
+    color: white;
+}
+
+// nav text and header
+@mixin text {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Tahoma;
+    color: white;
+    letter-spacing: 2px;
+}
