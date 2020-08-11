@@ -360,6 +360,11 @@ template {
   display: flex;
   justify-content: space-between;
 }
+@media screen and (min-width: 600px) {
+  .nav__list {
+    display: none;
+  }
+}
 .nav__item {
   padding: 0 1rem;
 }
@@ -374,7 +379,7 @@ template {
 }
 .nav__header {
   position: relative;
-  margin-top: 10rem;
+  margin-top: 8rem;
   font-weight: normal;
   font-size: 2.3rem;
   text-align: center;
@@ -385,6 +390,44 @@ template {
 }
 .nav__header::selection {
   background-color: #06af98;
+}
+@media screen and (min-width: 600px) {
+  .nav__header {
+    font-size: 4rem;
+    margin-top: 10.5rem;
+  }
+}
+.nav .nav-pc__list {
+  display: none;
+}
+@media screen and (min-width: 600px) {
+  .nav .nav-pc__list {
+    position: relative;
+    padding: 1.5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav .nav-pc__list:hover {
+    background-color: white;
+    transition-duration: 0.5s;
+  }
+}
+@media screen and (min-width: 600px) {
+  .nav .nav-pc__item {
+    padding: 0 1rem;
+  }
+}
+@media screen and (min-width: 600px) {
+  .nav .nav-pc__link {
+    text-transform: uppercase;
+    font-size: 1rem;
+    text-decoration: none;
+    color: white;
+  }
+  .nav .nav-pc__link:hover {
+    color: black;
+  }
 }
 
 .section-stock {
