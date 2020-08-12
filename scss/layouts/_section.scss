@@ -12,9 +12,7 @@
     .stock {
 
         @media screen and (min-width: 600px) {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include flex;
         }
         
         &__text-time {
