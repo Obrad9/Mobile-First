@@ -359,6 +359,7 @@ template {
   top: 20px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 @media screen and (min-width: 600px) {
   .nav__list {
@@ -368,6 +369,13 @@ template {
 .nav__item {
   padding: 0 1rem;
 }
+.nav__item:first-child {
+  border: 2px solid white;
+  padding: 0.5rem;
+  margin-left: 1rem;
+  border-radius: 0.5rem;
+  font-size: 0.8rem;
+}
 .nav__link {
   text-decoration: none;
   padding: 1.1rem 0rem;
@@ -376,6 +384,10 @@ template {
   font-family: Tahoma;
   color: white;
   letter-spacing: 2px;
+}
+.nav__link .fa {
+  transform: rotate(90deg);
+  font-size: 2rem;
 }
 .nav__header {
   position: relative;
@@ -404,6 +416,7 @@ template {
   .nav .nav-pc__list {
     position: relative;
     padding: 1.5rem 0;
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -425,19 +438,17 @@ template {
     text-decoration: none;
     color: white;
   }
-  .nav .nav-pc__link:hover {
-    color: black;
-  }
 }
 
 .section-stock {
   margin-top: 50%;
   text-align: center;
   margin-bottom: 4rem;
+  cursor: pointer;
 }
 @media screen and (min-width: 600px) {
   .section-stock {
-    margin-top: 30%;
+    margin-top: 23%;
     margin-bottom: 2rem;
   }
 }
@@ -542,7 +553,6 @@ template {
 @media screen and (min-width: 600px) {
   .news__deck {
     display: flex;
-    flex-basis: 20%;
   }
 }
 .news__section-mid {
@@ -638,6 +648,8 @@ template {
     background-color: white;
     padding: 2rem;
     border-radius: 5px;
+    border: 1px solid rgba(82, 74, 74, 0.2);
+    border-right: 2px solid lime;
   }
 }
 @media screen and (min-width: 600px) {
@@ -654,6 +666,8 @@ template {
     background-color: white;
     padding: 2rem;
     border-radius: 5px;
+    border: 1px solid rgba(82, 74, 74, 0.2);
+    border-left: 2px solid lime;
   }
 }
 @media screen and (min-width: 600px) {
@@ -671,6 +685,14 @@ template {
     background-color: white;
     padding: 2rem;
     border-radius: 5px;
+    border: 1px solid rgba(82, 74, 74, 0.2);
+    border-right: 2px solid lime;
+  }
+}
+@media screen and (min-width: 600px) {
+  .section-about .about-third .about__description .about__link {
+    text-align: right;
+    padding: 0.5rem 0;
   }
 }
 @media screen and (min-width: 600px) {
@@ -687,6 +709,8 @@ template {
     background-color: white;
     padding: 2rem;
     border-radius: 5px;
+    border: 1px solid rgba(82, 74, 74, 0.2);
+    border-left: 2px solid lime;
   }
 }
 @media screen and (min-width: 600px) {
@@ -745,6 +769,29 @@ template {
   background-color: #00d4a6;
   color: white;
   transition-duration: 0.5s;
+}
+.section-about .about__link--arrow {
+  width: 100%;
+  text-align: right;
+  position: relative;
+  top: 0;
+  left: 150px;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  background-color: #00d4a6;
+  color: white;
+}
+@media screen and (min-width: 600px) {
+  .section-about .about__link--arrow {
+    position: initial;
+    margin: 0;
+    margin-left: 4rem;
+    padding: 0.5rem 1rem;
+    background-color: #00d4a6;
+    color: white;
+    font-size: 1.2rem;
+    height: 100%;
+  }
 }
 
 .footer {
