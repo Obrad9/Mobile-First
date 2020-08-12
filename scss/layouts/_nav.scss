@@ -64,7 +64,7 @@
         @include text;
 
         &::selection {
-            background-color: rgb(6, 175, 152);
+            background-color: $hover-color;
         }
 
         @media screen and (min-width: 600px){    

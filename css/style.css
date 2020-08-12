@@ -498,7 +498,7 @@ template {
 }
 .section-stock .stock__text-price {
   font-size: 4.5rem;
-  color: #535353;
+  color: #414141;
   margin: 0;
 }
 @media screen and (min-width: 600px) {

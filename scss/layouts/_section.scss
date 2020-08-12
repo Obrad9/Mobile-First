@@ -42,7 +42,7 @@
 
         &__text-price {
             font-size: 4.5rem;
-            color: rgb(83, 83, 83);
+            color: darken($stock-desc-color, 20%);
             margin: 0;
             @media screen and (min-width: 600px) {
                 font-size: 1.5rem;
@@ -64,11 +64,11 @@
 
         &__text-link {
             display: inline-block;
-            color: rgb(1, 214, 72);
+            color: $border-right-color;
             text-decoration: none;
             font-size: 1.2rem;
             text-transform: uppercase;
-            border: 2px solid rgb(0, 163, 128);
+            border: 2px solid $hover-color;
             border-radius: 5px;
             padding: 0.5rem;
             margin-top: 1rem;
