@@ -16,7 +16,7 @@
         }
         
         &__text-time {
-            color: $stock-text-color;
+            color: $stock-desc-color;
             font-size: 1.2rem;
             margin: 0;
 
@@ -27,7 +27,7 @@
         }
 
         &__text-delay {
-            color: $stock-text-color;
+            color: $stock-desc-color;
             font-size: 0.7rem;
             letter-spacing: 1px;
             margin: 0.3rem;

@@ -405,7 +405,7 @@ template {
   letter-spacing: 2px;
 }
 .nav__header::selection {
-  background-color: #06af98;
+  background-color: #00d4a6;
 }
 @media screen and (min-width: 600px) {
   .nav__header {
@@ -471,7 +471,7 @@ template {
   }
 }
 .section-stock .stock__text-time {
-  color: gray;
+  color: #747474;
   font-size: 1.2rem;
   margin: 0;
 }
@@ -482,7 +482,7 @@ template {
   }
 }
 .section-stock .stock__text-delay {
-  color: gray;
+  color: #747474;
   font-size: 0.7rem;
   letter-spacing: 1px;
   margin: 0.3rem;
@@ -522,11 +522,11 @@ template {
 }
 .section-stock .stock__text-link {
   display: inline-block;
-  color: #01d648;
+  color: lime;
   text-decoration: none;
   font-size: 1.2rem;
   text-transform: uppercase;
-  border: 2px solid #00a380;
+  border: 2px solid #00d4a6;
   border-radius: 5px;
   padding: 0.5rem;
   margin-top: 1rem;
