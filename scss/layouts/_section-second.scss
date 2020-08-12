@@ -9,62 +9,36 @@
 
         .about__description {
             @media screen and (min-width:600px) {
-                position: relative;
+                @include about;
+                border-right: 2px solid $border-right-color;
                 top: -485px;
                 left: 720px;
-                width: 25%;
-                background-color: white;
-                padding: 2rem;
-                border-radius: 5px;
-                border: 1px solid rgba(82, 74, 74, 0.2);
-                border-right: 2px solid rgb(0, 255, 0);
-                
             }
         }
     }
 
     .about-second {
-        @media screen and (min-width:600px) {
-            text-align: right;
-        }
-        
+        @include text-right;
 
         .about__description {
             @media screen and (min-width:600px) {
-                position: relative;
+                @include about;
                 top: -450px;
                 left: -50px;
-                width: 25%;
-                background-color: white;
-                padding: 2rem;
-                border-radius: 5px;
-                border: 1px solid rgba(82, 74, 74, 0.2);
-                border-left: 2px solid rgb(0, 255, 0);
+                border-left: 2px solid $border-right-color;
             }
-
-            .about__header,
-            .about__text {
-                @media screen and (min-width:600px) {
-                    text-align: left;
-                }
-            }
+            @include text-left;
         }
-
     }
 
     .about-third {
 
         .about__description {
             @media screen and (min-width:600px) {
-                position: relative;
+                @include about;
+                border-right: 2px solid $border-right-color;
                 top: -430px;
                 left: 720px;
-                width: 25%;
-                background-color: white;
-                padding: 2rem;
-                border-radius: 5px;
-                border: 1px solid rgba(82, 74, 74, 0.2);
-                border-right: 2px solid rgb(0, 255, 0);
             }
 
             .about__link {
@@ -76,33 +50,18 @@
         }
     }
 
-    .about-fourth {
-        @media screen and (min-width:600px) {
-            text-align: right;
-        }
-        
+    .about-forth {
+        @include text-right;
 
         .about__description {
             @media screen and (min-width:600px) {
-                position: relative;
+                @include about;
                 top: -470px;
                 left: -50px;
-                width: 25%;
-                background-color: white;
-                padding: 2rem;
-                border-radius: 5px;
-                border: 1px solid rgba(82, 74, 74, 0.2);
-                border-left: 2px solid rgb(0, 255, 0);
+                border-left: 2px solid $border-right-color;
             }
-
-            .about__header,
-            .about__text {
-                @media screen and (min-width:600px) {
-                    text-align: left;
-                }
-            }
+            @include text-left;
         }
-
     }
 
     .about {
@@ -110,7 +69,6 @@
         @media screen and (min-width:600px) {
             height: 100vh;  
         }
-        
 
         &__image {
             width: 100%;
@@ -163,24 +121,14 @@
     }
 
     .about__link--arrow {
-        width: 100%;
-        text-align: right;
         position: relative;
-        top: 0;
         left: 150px;
-        padding: 0.5rem 1rem;
-        font-size: 1.2rem;
-        background-color: $hover-color;
-        color: white;
+        @include arrow;
+        
         @media screen and (min-width:600px) {
             position: initial;
-            margin: 0;
             margin-left: 4rem;
-            padding: 0.5rem 1rem;
-            background-color: $hover-color;
-            color: white;
-            font-size: 1.2rem;
-            height: 100%;  
+            @include arrow;
         }
     }
 }

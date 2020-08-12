@@ -17,3 +17,45 @@
     color: white;
     letter-spacing: 2px;
 }
+
+// Flex
+@mixin flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// About card
+@mixin about {
+    position: relative;
+    width: 25%;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 5px;
+    border: 1px solid $border-color;
+}
+
+// second and forth text-align: right;
+@mixin text-right {
+    @media screen and (min-width:600px) {
+        text-align: right;
+    }
+}
+
+// for second and forth text-align: left;
+@mixin text-left {
+    .about__header,
+    .about__text {
+        @media screen and (min-width:600px) {
+            text-align: left;
+        }
+    }
+}
+
+// about link arrow
+@mixin arrow {
+    padding: 0.5rem 1rem;
+    background-color: $hover-color;
+    color: white;
+    font-size: 1.2rem;
+} 

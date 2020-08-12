@@ -376,6 +376,10 @@ template {
   border-radius: 0.5rem;
   font-size: 0.8rem;
 }
+.nav__item:nth-child(2) {
+  width: 30%;
+  text-align: center;
+}
 .nav__link {
   text-decoration: none;
   padding: 1.1rem 0rem;
@@ -406,14 +410,14 @@ template {
 @media screen and (min-width: 600px) {
   .nav__header {
     font-size: 4rem;
-    margin-top: 10.5rem;
+    margin-top: 8rem;
   }
 }
-.nav .nav-pc__list {
+.nav-pc__list {
   display: none;
 }
 @media screen and (min-width: 600px) {
-  .nav .nav-pc__list {
+  .nav-pc__list {
     position: relative;
     padding: 1.5rem 0;
     margin: 0;
@@ -421,22 +425,29 @@ template {
     justify-content: center;
     align-items: center;
   }
-  .nav .nav-pc__list:hover {
+  .nav-pc__list:hover {
     background-color: white;
     transition-duration: 0.5s;
   }
 }
 @media screen and (min-width: 600px) {
-  .nav .nav-pc__item {
+  .nav-pc__item {
     padding: 0 1rem;
+  }
+  .nav-pc__item:nth-child(4) {
+    width: 10%;
+    text-align: center;
   }
 }
 @media screen and (min-width: 600px) {
-  .nav .nav-pc__link {
+  .nav-pc__link {
     text-transform: uppercase;
     font-size: 1rem;
     text-decoration: none;
     color: white;
+  }
+  .nav-pc__link:hover {
+    color: black;
   }
 }
 
@@ -487,7 +498,7 @@ template {
 }
 .section-stock .stock__text-price {
   font-size: 4.5rem;
-  color: #535353;
+  color: #414141;
   margin: 0;
 }
 @media screen and (min-width: 600px) {
@@ -564,8 +575,8 @@ template {
   }
 }
 @media screen and (min-width: 600px) {
-  .news__section-mid .news__description {
-    font-size: 1.8rem;
+  .news__description {
+    font-size: 1.3rem;
   }
 }
 .news__section-left {
@@ -626,7 +637,7 @@ template {
   font-weight: 500;
 }
 .news__description {
-  color: dimgray;
+  color: #747474;
   letter-spacing: 1px;
   line-height: 1.5;
   font-family: Arial, Helvetica, sans-serif;
@@ -642,14 +653,14 @@ template {
 @media screen and (min-width: 600px) {
   .section-about .about-first .about__description {
     position: relative;
-    top: -485px;
-    left: 720px;
     width: 25%;
     background-color: white;
     padding: 2rem;
     border-radius: 5px;
     border: 1px solid rgba(82, 74, 74, 0.2);
     border-right: 2px solid lime;
+    top: -485px;
+    left: 720px;
   }
 }
 @media screen and (min-width: 600px) {
@@ -660,13 +671,13 @@ template {
 @media screen and (min-width: 600px) {
   .section-about .about-second .about__description {
     position: relative;
-    top: -450px;
-    left: -50px;
     width: 25%;
     background-color: white;
     padding: 2rem;
     border-radius: 5px;
     border: 1px solid rgba(82, 74, 74, 0.2);
+    top: -450px;
+    left: -50px;
     border-left: 2px solid lime;
   }
 }
@@ -679,14 +690,14 @@ template {
 @media screen and (min-width: 600px) {
   .section-about .about-third .about__description {
     position: relative;
-    top: -430px;
-    left: 720px;
     width: 25%;
     background-color: white;
     padding: 2rem;
     border-radius: 5px;
     border: 1px solid rgba(82, 74, 74, 0.2);
     border-right: 2px solid lime;
+    top: -430px;
+    left: 720px;
   }
 }
 @media screen and (min-width: 600px) {
@@ -696,26 +707,26 @@ template {
   }
 }
 @media screen and (min-width: 600px) {
-  .section-about .about-fourth {
+  .section-about .about-forth {
     text-align: right;
   }
 }
 @media screen and (min-width: 600px) {
-  .section-about .about-fourth .about__description {
+  .section-about .about-forth .about__description {
     position: relative;
-    top: -470px;
-    left: -50px;
     width: 25%;
     background-color: white;
     padding: 2rem;
     border-radius: 5px;
     border: 1px solid rgba(82, 74, 74, 0.2);
+    top: -470px;
+    left: -50px;
     border-left: 2px solid lime;
   }
 }
 @media screen and (min-width: 600px) {
-  .section-about .about-fourth .about__description .about__header,
-.section-about .about-fourth .about__description .about__text {
+  .section-about .about-forth .about__description .about__header,
+.section-about .about-forth .about__description .about__text {
     text-align: left;
   }
 }
@@ -771,26 +782,21 @@ template {
   transition-duration: 0.5s;
 }
 .section-about .about__link--arrow {
-  width: 100%;
-  text-align: right;
   position: relative;
-  top: 0;
   left: 150px;
   padding: 0.5rem 1rem;
-  font-size: 1.2rem;
   background-color: #00d4a6;
   color: white;
+  font-size: 1.2rem;
 }
 @media screen and (min-width: 600px) {
   .section-about .about__link--arrow {
     position: initial;
-    margin: 0;
     margin-left: 4rem;
     padding: 0.5rem 1rem;
     background-color: #00d4a6;
     color: white;
     font-size: 1.2rem;
-    height: 100%;
   }
 }
 
