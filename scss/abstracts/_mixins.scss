@@ -35,14 +35,14 @@
     border: 1px solid $border-color;
 }
 
-// second and forth text-align: right;
+// second and forth text-align: right, to move image to the right
 @mixin text-right {
     @media screen and (min-width:600px) {
         text-align: right;
     }
 }
 
-// for second and forth text-align: left;
+// for second and forth text-align: left, to move text to the left
 @mixin text-left {
     .about__header,
     .about__text {
@@ -59,3 +59,29 @@
     color: white;
     font-size: 1.2rem;
 } 
+
+// include text left-right and .about description and about mixin, for second and fourth
+@mixin even ($top) {
+    @include text-right;
+            @include text-left;
+
+            .about__description {
+                @media screen and (min-width:600px) {
+                    @include about;
+                    top: $top;
+                    left: -50px;
+                    border-left: 2px solid $border-right-color;
+                }
+            }
+}
+
+@mixin odd ($top) {
+    .about__description {
+        @media screen and (min-width:600px) {
+            @include about;
+            border-right: 2px solid $border-right-color;
+            top: $top;
+            left: 720px;
+        }
+    }
+}

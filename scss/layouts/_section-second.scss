@@ -4,43 +4,26 @@
         padding: 2rem 8rem;
         background-color: rgb(255, 246, 246);
     }
-
-    .about-first {
-
-        .about__description {
-            @media screen and (min-width:600px) {
-                @include about;
-                border-right: 2px solid $border-right-color;
-                top: -485px;
-                left: 720px;
-            }
+    
+    .about {
+        @media screen and (min-width:600px) {
+            height: 100vh;  
         }
-    }
 
-    .about-second {
-        @include text-right;
-
-        .about__description {
-            @media screen and (min-width:600px) {
-                @include about;
-                top: -450px;
-                left: -50px;
-                border-left: 2px solid $border-right-color;
-            }
-            @include text-left;
+        // first child about
+        &:first-child {
+            @include odd($top: -485px);
         }
-    }
 
-    .about-third {
+        // second child about
+        &:nth-child(2) {
+            @include even($top: -450px);
+        }
 
-        .about__description {
-            @media screen and (min-width:600px) {
-                @include about;
-                border-right: 2px solid $border-right-color;
-                top: -430px;
-                left: 720px;
-            }
-
+        // third child about
+        &:nth-child(3) {
+            @include odd($top: -430px);
+    
             .about__link {
                 @media screen and (min-width: 600px){
                     text-align: right;
@@ -48,26 +31,10 @@
                 }
             }
         }
-    }
 
-    .about-forth {
-        @include text-right;
-
-        .about__description {
-            @media screen and (min-width:600px) {
-                @include about;
-                top: -470px;
-                left: -50px;
-                border-left: 2px solid $border-right-color;
-            }
-            @include text-left;
-        }
-    }
-
-    .about {
-
-        @media screen and (min-width:600px) {
-            height: 100vh;  
+        // fourth child about
+        &:last-child {
+            @include even($top: -470px);
         }
 
         &__image {
@@ -118,17 +85,17 @@
                 transition-duration: 0.5s;
             }
         }
-    }
 
-    .about__link--arrow {
-        position: relative;
-        left: 150px;
-        @include arrow;
-        
-        @media screen and (min-width:600px) {
-            position: initial;
-            margin-left: 4rem;
+        &__link--arrow {
+            position: relative;
+            left: 150px;
             @include arrow;
+            
+            @media screen and (min-width:600px) {
+                position: initial;
+                margin-left: 4rem;
+                @include arrow;
+            }
         }
     }
 }
